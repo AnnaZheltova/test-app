@@ -1,0 +1,244 @@
+* {
+    font-family: "Rubik", sans-serif;
+}
+
+:root {
+    /* Colors: */
+    --unnamed-color-fdd000: #fdd000;
+    --unnamed-color-3d3d3d: #3d3d3d;
+
+    /* Font/text values */
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-300: 300px;
+    --unnamed-font-weight-medium: medium;
+    --unnamed-font-weight-bold: bold;
+    --unnamed-font-size-16: 16px;
+    --unnamed-font-size-20: 20px;
+    --unnamed-font-size-22: 22px;
+    --unnamed-font-size-50: 50px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-character-spacing-1: 1px;
+    --unnamed-character-spacing-0-32: 0.32px;
+    --unnamed-character-spacing-0-4: 0.4px;
+    --unnamed-character-spacing-0-44: 0.44px;
+    --unnamed-line-spacing-30: 30px;
+    --unnamed-text-transform-uppercase: uppercase;
+}
+
+.container-fluid {
+    padding: 0px !important;
+}
+.main {
+    padding: 0;
+}
+.header {
+    padding: 50px 110px;
+}
+
+.header-img {
+    width: 165px;
+    height: 50px;
+}
+.nav-link {
+    font-size: 28px;
+    font-weight: var(--unnamed-font-weight-medium);
+    color: var(--unnamed-color-3d3d3d);
+    text-align: left;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+}
+.nav-link:hover {
+    color: var(--unnamed-color-fdd000);
+}
+.card-title {
+    font-size: var(--unnamed-font-size-50);
+    font-weight: var(--unnamed-font-weight-normal);
+    color: var(--unnamed-color-fdd000);
+    text-align: right;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+}
+.card-text {
+    font-size: 30px;
+    font-weight: var(--unnamed-font-weight-300);
+    text-align: right;
+    letter-spacing: 0.6px;
+    color: #dfdfdf;
+    margin-top: 44px;
+}
+.card-img-overlay {
+    margin-left: 55%;
+    margin-top: 15%;
+    margin-bottom: 45%;
+    margin-right: 30px;
+}
+.main {
+    background: #272829 0% 0% no-repeat padding-box;
+}
+
+.calendar {
+    width: 80%;
+}
+.calendar header {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.calendar header button,
+.calendar p {
+    margin: 0 auto;
+    color: #dfdfdf;
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: 19px;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: center;
+    text-transform: uppercase;
+}
+hr {
+    background-color: #dfdfdf;
+    width: 80%;
+}
+.border_tfoot {
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+.calendar table {
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: 17px;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: #dfdfdf;
+    text-align: center;
+}
+.calendar tbody::after {
+    height: 1rem;
+    display: table-row;
+    content: "";
+}
+.calendar th {
+    vertical-align: middle;
+    text-align: center;
+    height: 10%;
+}
+.calendar .day {
+    padding: 4px 8px;
+    vertical-align: middle;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.calendar .day:hover {
+    background: #272829 0% 0% no-repeat padding-box;
+    cursor: pointer;
+}
+
+.calendar .day.selected {
+    border: 2px solid var(--unnamed-color-fdd000) 0% 0% no-repeat padding-box;
+}
+
+.calendar .day.today {
+    background: var(--unnamed-color-fdd000) 0% 0% no-repeat padding-box;
+    color: #272829;
+}
+
+.calendar .day.today:hover {
+    background: var(--unnamed-color-fdd000) 0% 0% no-repeat padding-box;
+}
+
+.calendar .day.today.selected {
+    border: 2px solid lightgray;
+}
+.modal {
+    background: rgba(39, 40, 41, 0.85);
+}
+.modal-body {
+    padding-top: 0 !important;
+}
+.close {
+    margin-left: 97%;
+    background-color: var(--unnamed-color-fdd000) !important;
+    color: var(--unnamed-color-3d3d3d) !important;
+    font-weight: 300 !important;
+    text-shadow: none !important;
+    opacity: 1 !important;
+    padding: 1px 5px !important;
+}
+label {
+    display: block !important;
+    font-weight: (--unnamed-font-weight-medium);
+    font-size:  var(--unnamed-font-size-20);
+    letter-spacing: -0.4px;
+    color: #a2a2a2;
+}
+input::placeholder {
+    font-weight: (--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-22);
+    letter-spacing: 0.66px;
+    color: #3d3d3d;
+    padding-left: 20px;
+}
+.modal-dialog-centered {
+    width: fit-content;
+}
+.about-h1 {
+    font-weight: (--unnamed-font-weight-bold); 
+    font-size: 34px;
+    color: var(--unnamed-color-3d3d3d);
+    letter-spacing: -0.68px;
+}
+.about-text {
+    font-weight: (--unnamed-font-weight-300);
+    font-size: var(--unnamed-font-size-20);
+    letter-spacing: var(--unnamed-character-spacing-0-4);
+    color: var(--unnamed-color-3d3d3d);
+    margin-top: 78px;
+    letter-spacing: 0.4px;
+}
+.jumbotron{
+    background-color: transparent !important;
+}
+
+@media (max-width: 1024px){
+    .card-title{
+        font-size: 30px;
+    }
+    .card-text{
+        font-size: 22px;
+    }
+    .calendar{
+        width: auto;
+    }
+    .header{
+        padding: 25px 50px;
+    }
+}
+@media (max-width: 560px){
+    .header{
+        padding: 5px;
+    }
+    .header-img{
+        width: 100px;
+    }
+    .nav-link{
+        font-size: 12px;
+    }
+    .card-title{
+        font-size: 18px;
+    }
+    .card-text{
+        font-size: 12px;
+    }
+    .card-img-overlay {
+        margin-top: 2% !important;
+    }
+    .calendar p{
+        font-size: 15px;
+    }
+    .calendar table{
+        font-size: 12px;
+    }
+}
